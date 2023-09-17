@@ -17,7 +17,7 @@ export default function ObjectGenerator({ type, row, col }) {
       return (
         <mesh
           position={[x, VERTICAL_UNIT * 0.5, z]}
-          geometry={new THREE.BoxBufferGeometry(HORIZONTAL_UNIT, VERTICAL_UNIT, HORIZONTAL_UNIT)}
+          geometry={new THREE.BoxGeometry(HORIZONTAL_UNIT, VERTICAL_UNIT, HORIZONTAL_UNIT)}
           material={new THREE.MeshPhongMaterial({ color: Math.random() * 0xffffff })}></mesh>
       )
     default:
